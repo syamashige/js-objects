@@ -105,6 +105,16 @@ console.log(plainBox);
     console.log the object
 */
 
+var stockCar = {
+    model: "Thunderbird",
+    year: 1950,
+    automaticTransmission: false,
+    driver: null,
+    passengers: []
+}
+
+console.log(stockCar);
+
 
 /*
 
