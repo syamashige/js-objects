@@ -399,5 +399,25 @@ console.log(stockCarWithDriver);
 
 
  function addPassengers (car, name, ages) {
-     
+     for (var i = 0; i < name.length; i++) {
+         var passengers = {};
+         buildPerson(passengers, name[i], ages[i]);
+         car.passengers.push(passengers);
+     }
+     return car;
  }
+ addPassengers(stockCar, passengerList, passengerAges);
+ console.log(stockCar);
+
+ function displayPassengers (car) {
+     //console.log(car);
+     for (var i = 0; i < car.passengers.length; i++) {
+      console.log(car.passengers[i].name + ", age " + car.passengers[i].age + ", is riding dirty!");
+      //console.log(car.passengers[i].age);
+     }
+ }
+ displayPassengers(stockCar);
+//console.log(displayPassengers(stockCar));
+
+
+
